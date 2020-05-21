@@ -44,11 +44,11 @@ void process_image_callback(const sensor_msgs::Image img)
          }
      }
 	if(left == 1)
-           drive_robot(0.05, 0.3);
+           drive_robot(0.0, 0.2);
 	if(right == 1)
-           drive_robot(0.05, -0.3);
+           drive_robot(0.0, -0.2);
 	if(center == 1)
-           drive_robot(0.2, 0.0);
+           drive_robot(0.4, 0.0);
 	if(left == right == center == 0){
 		drive_robot(0.0,0.0);
          }
