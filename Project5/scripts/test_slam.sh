@@ -1,5 +1,5 @@
 #!/bin/sh
-xterm -e "source devel/setup.bash; export ROBOT_INITIAL_POSE='-x 0 -y 0 -Y 1.5707'; roslaunch turtlebot_gazebo turtlebot_world.launch world_file:='`pwd`/src/turtlebot_simulator/turtlebot_gazebo/worlds/bindu.world'" &
+xterm -e "source devel/setup.bash; export ROBOT_INITIAL_POSE='-x 0 -y 0 -Y 1.5707'; roslaunch turtlebot_gazebo turtlebot_world.launch world_file:='`pwd`/src/map/bindu.world'" &
 sleep 5
 xterm -e "rosrun gmapping slam_gmapping " &
 sleep 5
